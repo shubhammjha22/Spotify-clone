@@ -168,6 +168,11 @@ a
     transition: 0.3s ease-in;
 }
 
+.badge + i:hover
+{
+    cursor: pointer;
+}
+
 /* Main content top-banner */
 
 .sticky-nav
@@ -421,6 +426,7 @@ a
 .control-logo:hover
 {
     filter: brightness(3);
+    cursor: pointer;
 }
 
 
