@@ -1,0 +1,462 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.main
+{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar
+{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.75rem;
+}
+
+
+.main-content
+{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player
+{
+    background: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 4.5rem;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav
+{
+    background-color: #121212;
+    border-radius: 1rem;
+    
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option
+{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option:hover
+{
+    
+    opacity: 1;
+
+}
+
+.nav-option i
+{
+    font-size: 1.25rem;
+   
+}
+
+.nav-option a
+{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.lib
+{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.6rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.lib-option img
+{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.option
+{
+    justify-content: space-between;
+    align-items:center;
+}
+
+.icons
+{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.icons i
+{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover
+{
+    opacity: 1;
+}
+
+.box
+{   
+    background-color: #232323;
+    height:8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+
+}
+.box-p1
+{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2
+{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge
+{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.badge:hover
+{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+/* Main content top-banner */
+
+.sticky-nav
+{   
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.left
+{
+    margin-left: 0.75rem;
+    
+}
+
+
+
+.right
+{
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 0.8rem;
+}
+
+.dark     /* dark button */
+{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 1000px)
+{
+    .hide{
+        display: none;
+    }
+}
+
+/* Main content card-section */
+.card
+{
+    background: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card img
+{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title
+{
+    font-weight: 600;
+}
+
+.card-info
+{
+    font-size: 0.85rem;
+    opacity: 0.8;
+
+}
+
+/* footer */
+.footer{
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.line
+{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+/* music */
+
+/* album test */
+
+.music-player
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album
+{
+    width: 25%;
+}
+
+.player
+{
+    width: 50%;
+
+}
+
+.control
+{
+    width: 25%;
+    padding-left: 10rem;
+}
+
+.player-controls
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon
+{   
+    margin-right: 1.5rem;
+    height: 1rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover
+{
+    opacity: 1;
+}
+
+.pause:hover
+{
+    transform: scale(1.2);
+}
+
+.playback-bar
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar
+{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track
+{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.15rem;
+}
+.progress-bar::-webkit-slider-thumb
+{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -0.37rem;
+}
+
+
+/* mini album */
+
+.album-text
+{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.album
+{
+    padding: 0.75rem;
+    
+}
+
+.album-title
+{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.album-title:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.album-name
+{
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-left: 1rem;
+}
+
+.album-name:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.album
+{
+    height: 3.5rem;
+}
+
+.album-icon
+{   
+   opacity: 0.8;
+   gap: 0.8rem;
+   align-items: center;
+   margin-left: 2rem;
+   justify-content: baseline;
+}
+
+.album-icon:hover
+{
+    opacity: 1;
+}
+
+
+/* controls */
+
+.control-icon{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.control-logo
+{
+    margin-right: 0.3rem;
+    height: 2rem;
+    opacity: 0.8;
+}
+
+.control-logo:hover
+{
+    filter: brightness(3);
+}
+
+
+/* individual icon height set ignoree */
+.first
+{
+    height: 2.5rem;
+}
+
+.second
+{
+    height: 2.5rem;
+    opacity: 0.9;
+}
+
+.third
+{
+    height: 1.5rem;
+    opacity: 0.7;
+}
+
+.fourth
+{
+    height: 1rem;
+    opacity: 0.7;
+}
+
+.fifth
+{
+    height: 2.5rem;
+    opacity: 0.9;
+}
+
+/* control section */
+
+.control-bar
+{
+    justify-content: flex-start;
+}
